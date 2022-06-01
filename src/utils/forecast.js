@@ -9,7 +9,12 @@ const forecast = (latitude,longtitude,callback) =>{
             callback("invalid location",undefined);
         }else{
             callback(undefined,
-                `it is ${body.current.weather_descriptions[0]} it is currenetly ${body.current.temperature}. but it feels like ${body.current.feelslike}`)
+                `Today is ${body.current.weather_descriptions[0]}.
+                 current temperature is ${body.current.temperature}.
+                 but it feels like ${body.current.feelslike}.
+                 humidity is : ${body.current.humidity}.
+                 cloud covered is :${body.current.cloudcover}%.
+                 wind speed and its direction is : ${body.current.wind_speed} km/hr and ${body.current.wind_degree} degree ${body.current.wind_dir}`)
         }
 
     })
