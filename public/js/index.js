@@ -9,7 +9,7 @@ message_2.textContent='';
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     const address=search.value;
-    fetch(`http://localhost:3000/weather?address=${address}`)
+    fetch(`/weather?address=${address}`)
     .then((response)=>{
         response.json().then((data)=>{
             if(data.error){
