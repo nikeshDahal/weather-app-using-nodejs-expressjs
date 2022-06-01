@@ -1,7 +1,3 @@
-
-console.log("testing index client side js code............");
-
-
 const form=document.querySelector('form');
 const search= document.querySelector('input');
 const message_1= document.querySelector('#message-1');
